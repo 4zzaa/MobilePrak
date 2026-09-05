@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget{
         ),
         body: Center(
           child: grid(),
-          ),
         ),
-      );
+      ),
+    );
   }
 }
 class KotakBiruJempol extends StatelessWidget {
@@ -38,9 +38,9 @@ class KotakBiruJempol extends StatelessWidget {
     );
   }
 }
-class Kotakwarna extends StatelessWidget {
+class iconFav extends StatelessWidget {
   final Color warna;
-  const Kotakwarna({super.key, required this.warna});
+  const iconFav({super.key, required this.warna});
 
   @override
   Widget build(BuildContext context) {
@@ -52,6 +52,22 @@ class Kotakwarna extends StatelessWidget {
           border: Border.all(color: Colors.brown, width: 2),
           borderRadius: BorderRadius.circular(12)
       ),
+        child:Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.favorite,
+              color: Colors.red,
+              size: 50,
+            ),
+            Text(
+              "ini adalah icon favorite",
+              style: TextStyle(
+                  fontSize: 14
+              ),
+            )
+          ],
+        )
     );
   }
 }
@@ -64,18 +80,18 @@ class grid extends StatelessWidget {
          children: [
            Row(
              children: [
-              Kotakwarna(warna: Colors.green),
+              iconFav(warna: Colors.white),
                SizedBox(height: 20, width: 20,),
-               Kotakwarna(warna: Colors.yellow),
+               iconFav(warna: Colors.white),
                SizedBox(height: 20, width: 20,),
              ],
            ),
            SizedBox(height: 20),
            Row(
              children: [
-               Kotakwarna(warna: Colors.blue),
+               iconFav(warna: Colors.white),
                SizedBox(height:20, width: 20,),
-               Kotakwarna(warna: Colors.red),
+               iconFav(warna: Colors.white),
                SizedBox(height:20, width: 20,),
              ],
            )
@@ -84,4 +100,9 @@ class grid extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
 
