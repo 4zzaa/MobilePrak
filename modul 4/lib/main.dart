@@ -31,7 +31,6 @@ class MusicPlayerPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            // Bagian tengah
             Expanded(
               child: Center(
                 child: Text(
@@ -50,7 +49,6 @@ class MusicPlayerPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  // Shuffle
                   IconButton(
                     onPressed: () {},
                     icon: const Icon(
@@ -58,8 +56,7 @@ class MusicPlayerPage extends StatelessWidget {
                       color: Colors.white,
                       size: 18,
                     ),
-                  ),
-                  // Previous
+                  ),                  
                   IconButton(
                     onPressed: () {},
                     icon: const Icon(
