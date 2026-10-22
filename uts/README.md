@@ -75,7 +75,7 @@ Gunakan project Flutter yang sudah tersedia. Jika menggunakan ZIP folder `lib`, 
    dependencies:
      flutter:
        sdk: flutter
-     http: ^1.4.0
+     http: ^1.5.0
 
    flutter:
      uses-material-design: true
